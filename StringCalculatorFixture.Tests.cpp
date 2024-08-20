@@ -36,7 +36,7 @@ TEST_F(StringCalculatorAddTestFixture, string_calculator_add_when_passed_two_com
   int expectedsum=3;
   int actualSum=calculator.Add(input);
   ASSERT_EQ(actualSum,expectedsum);
-}
+} 
 
 TEST_F(StringCalculatorAddTestFixture, string_calculator_add_when_passed_multiple_comma_delimited_numbers_returns_their_sum){
   string input="1,2,3";
