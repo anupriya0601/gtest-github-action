@@ -58,6 +58,13 @@ TEST(string_calculator_add_when_passed_a_delimiter, returns_their_sum){
   ASSERT_EQ(actualSum,expectedsum);
 }
 
+TEST(string_calculator_add_when_passed_negative_number, throws_an_exception_listing_invalid_values){
+  StringCalculator calculator;
+  string input="1,-2,-4,5";
+//   int expectedsum=45;
+//   int actualSum=;
+  ASSERT_THROW(calculator.Add(input),invalid_argument);
+}
 
 TEST(string_calculator_add_when_passed_numbers_over_1000, ignores_them){
   StringCalculator calculator;
