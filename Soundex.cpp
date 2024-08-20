@@ -11,6 +11,7 @@ char getSoundexCode(char c) {
         case 'M': case 'N': return '5';
         case 'R': return '6';
         default: return '0'; // For A, E, I, O, U, H, W, Y
+        
     }
 }
 
