@@ -2,7 +2,6 @@
 #include <iostream>
 #include "TestChallenge.h"
 
-int alertFailureCount = 0;
 
 int networkAlerter(int celcius) {
    //Real Network Interaction Happens Here
