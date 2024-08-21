@@ -13,7 +13,7 @@ class StringCalculatorAddTestFixture:public testing::Test{
 class StringCalculatorParamFixture: public StringCalculatorAddTestFixture,
                                     public testing::WithParamInterface<std::tuple<std::string,int>> {
                                     
-}
+};
 
 INSTANTIATE_TEST_SUITE_P(SingleNumerParameter, StringCalculatorParamFixture,
                          ::testing::Values(
