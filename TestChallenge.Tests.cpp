@@ -11,3 +11,14 @@ TEST(TestChallengeTestSuite, Test1){
   ASSERT_EQ(expectedFailureCount, alertFailureCount);
   
 }
+TEST(TestChallengeTestSuite, Test2){
+//Arrange
+  int expectedFailureCount=3;
+  float inputTemp = 100;
+ //Act
+  alertInCelcius(inputTemp);
+  alertInCelcius(inputTemp+5);
+  //Assert
+  ASSERT_EQ(expectedFailureCount, alertFailureCount);
+  
+}
