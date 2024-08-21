@@ -2,7 +2,7 @@
 #include "StringCalculator.h"
 #include <tuple>
 
-using ::testing::_;
+//using ::testing::_;
 
 //Fixture
 class StringCalculatorAddTestFixture:public testing::Test{
@@ -15,13 +15,13 @@ class StringCalculatorParamFixture: public StringCalculatorAddTestFixture,
                                     
 }
 
-INSTANTIATE_TEST_SUITE_P(SingleNumerParameter, string_calculator_add_Parameter_Fixture,
+INSTANTIATE_TEST_SUITE_P(SingleNumerParameter, StringCalculatorParamFixture,
                          ::testing::Values(
                              std::make_tuple("1", 1),
                              std::make_tuple("1,2",3)
 ));
 
-TEST_P(string_calculator_add_Parameter_Fixture, CheckCalculatorResult) {
+TEST_P(StringCalculatorParamFixture, CheckCalculatorResult) {
     string input=std::get<0>(GetParam());
   int expectedsum=std::get<1>(GetParam());
   //Act
