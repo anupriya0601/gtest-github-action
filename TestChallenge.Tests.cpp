@@ -6,8 +6,8 @@ TEST(TestChallengeTestSuite, Test1){
   int expectedFailureCount=1;
   float inputTemp = 100;
  //Act
-  int actualFailureCount=alertInCelcius(inputTemp);
+  alertInCelcius(inputTemp);
   //Assert
-  ASSERT_EQ(expectedFailureCount, actualFailureCount);
+  ASSERT_EQ(expectedFailureCount, alertFailureCount);
   
 }
