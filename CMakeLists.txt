@@ -23,6 +23,8 @@ add_executable(
   StringCalculator.cpp
   # StringCalculatorFixture.Tests.cpp
   DataDriven.Tests.cpp
+  TestChallenge.cpp
+  TestChallenge.Tests.cpp
 )
 target_link_libraries(
   cleancode
